@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211044"
+    tools:context=".MainActivity">
+
+    
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:src="@drawable/icget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/splash"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Be Healthy"
+        app:layout_constraintTop_toBottomOf="@id/splash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:layout_margin="17dp"
+        android:id="@+id/splashtxt"
+        android:fontFamily="@font/josefinsans_bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You cant buy Happiness with money"
+        app:layout_constraintTop_toBottomOf="@id/splashtxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="26dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="#E1D7D7"
+        android:id="@+id/motivation"
+        android:fontFamily="@font/sansation_regular"
+        android:lineSpacingExtra="4dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/motivation"
+        android:text="Get Started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/josefinsans_bold"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:id="@+id/getStarted"
+        android:background="@drawable/button_bg"
+        android:paddingLeft="64dp"
+        android:textColor="#FFF"
+        android:paddingRight="64dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
