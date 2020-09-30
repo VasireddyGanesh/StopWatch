@@ -29,8 +29,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="30sp"
         android:textColor="#FFF"
-        android:layout_margin="17dp"
+        android:layout_margin="16dp"
         android:id="@+id/splashtxt"
+        app:layout_constraintBottom_toTopOf="@id/motivation"
         android:fontFamily="@font/josefinsans_bold"
         />
 
@@ -41,7 +42,8 @@
         app:layout_constraintTop_toBottomOf="@id/splashtxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="26dp"
+        app:layout_constraintBottom_toTopOf="@id/getStarted"
+        android:layout_margin="16dp"
         android:textSize="25sp"
         android:textAlignment="center"
         android:textColor="#E1D7D7"
@@ -65,6 +67,7 @@
         android:background="@drawable/button_bg"
         android:paddingLeft="64dp"
         android:textColor="#FFF"
+        android:layout_marginBottom="16dp"
         android:paddingRight="64dp"
         android:paddingBottom="8dp"
         android:paddingTop="8dp"

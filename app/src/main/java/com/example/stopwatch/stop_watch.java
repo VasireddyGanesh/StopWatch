@@ -40,7 +40,7 @@ public class stop_watch extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 stick.startAnimation(rotate);
-                stopbtn.animate().alpha(1).translationY(-80).setDuration(300).start();
+                stopbtn.animate().alpha(1).translationY(0).setDuration(300).start();
                 startbtn.animate().alpha(0).setDuration(300).start();
                 chronometer.setBase(SystemClock.elapsedRealtime());
                 chronometer.start();
@@ -53,7 +53,7 @@ public class stop_watch extends AppCompatActivity {
                 stick.clearAnimation();
                 chronometer.stop();
                 chronometer.setBase(SystemClock.elapsedRealtime());
-                startbtn.animate().alpha(1).translationY(-80).setDuration(300).start();
+                startbtn.animate().alpha(1).translationY(0).setDuration(300).start();
                 stopbtn.animate().alpha(0).setDuration(300).start();
             }
         });
