@@ -1,2 +1,2 @@
 # StopWatch
-This is a StopWatch Application for Android
+Stopwatch App For Android
